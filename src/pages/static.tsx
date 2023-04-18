@@ -2,10 +2,12 @@
 interface TimeProps {
   time: string;
 }
-export async function getStaticProps(): Promise<TimeProps> {
+export async function getStaticProps(): Promise<any> {
   const date = new Date();
   return {
-    time: date.toTimeString()
+    props: {
+      time: date.toTimeString()
+    }
   }
 }
 export default function Static(props: TimeProps) {
