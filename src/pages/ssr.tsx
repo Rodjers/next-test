@@ -11,6 +11,6 @@ export async function getServerSideProps(): Promise<any> {
   }
 }
 export default function Static(props: TimeProps) {
-  return (<div>{props.time}</div>)
+  return (<div>{props.time} en endring</div>)
 
 }
